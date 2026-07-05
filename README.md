@@ -7,7 +7,7 @@ Mecozzi, Bianca
 *COMISIÓN:
 K1.1
 *IA UTILIZADA
-Claude: Esta IA fue utilazada para organizar mejor el código.
+Claude: Esta IA fue utilazada para corroborar errores y corregirlos si fuese necesario.
 *DESCRIPCIÓN GENERAL DEL SISTEMA
 Este proyecto consiste en un sistema por consola desarrollado en Python, orientado a resolver la gestión del flujo de ventas y el control de caja de un supermercado. El programa está estructurado en base a un menú principal interactivo que permite al usuario operar el sistema de forma continua hasta que decida finalizar la ejecución.
 Para el desarrollo se aplicaron conceptos de lógica de programación como estructuras de control de flujo, diccionarios para el almacenamiento de datos en memoria, y manejo de excepciones.
