@@ -1,4 +1,4 @@
-INTEGRANTES DEL GRUPO:
+*INTEGRANTES DEL GRUPO:
 Marichich Speroni, Tobias Santiago
 Almeida Diaz, Marcelo Ariel
 Bertran Parodi, Joaquin
