@@ -92,4 +92,95 @@ def registrar_productos(productos):
             productos_vendidos[nombre] += producto["cantidad"]
         else:
             productos_vendidos[nombre] = producto["cantidad"]
-            
+            def imprimir_ticket(productos, total,
+                     descuento, total_final):
+
+    print("\n========================")
+    print("      SUPERMERCADO")
+    print("========================")
+
+    for producto in productos:
+
+        print(
+            f"{producto['nombre']} "
+            f"x{producto['cantidad']} "
+            f"= ${producto['subtotal']:.2f}"
+        )
+
+    print("------------------------")
+    print(f"Total: ${total:.2f}")
+    print(f"Descuento: ${descuento:.2f}")
+    print(f"TOTAL A PAGAR: ${total_final:.2f}")
+    print("========================\n")
+
+
+def mostrar_estadisticas():
+
+    print("\n===== ESTADÍSTICAS =====")
+
+    print("Cantidad de ventas:", cantidad_ventas)
+    print(f"Facturación total: ${ventas_totales:.2f}")
+
+    if productos_vendidos:
+
+        producto_top = max(
+            productos_vendidos,
+            key=productos_vendidos.get
+        )
+
+        print(
+            "Producto más vendido:",
+            producto_top,
+            f"({productos_vendidos[producto_top]} unidades)"
+        )
+
+    else:
+        print("No hay ventas registradas.")
+
+    print("========================\n")
+
+
+
+# Programa Principal
+
+while True:
+
+    print("====== SUPERMERCADO ======")
+    print("1. Nueva venta")
+    print("2. Ver estadísticas")
+    print("3. Salir")
+
+    opcion = input("Seleccione una opción: ")
+
+    if opcion == "1":
+
+        productos = cargar_productos()
+
+        total = calcular_total(productos)
+
+        descuento, total_final = aplicar_descuento(total)
+
+        imprimir_ticket(
+            productos,
+            total,
+            descuento,
+            total_final
+        )
+
+        registrar_productos(productos)
+
+        ventas_totales += total_final
+        cantidad_ventas += 1
+
+    elif opcion == "2":
+
+        mostrar_estadisticas()
+
+    elif opcion == "3":
+
+        print("Gracias por utilizar el sistema.")
+        break
+
+    else:
+
+        print("Opción inválida.\n")
