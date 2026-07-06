@@ -1,8 +1,8 @@
 *INTEGRANTES DEL GRUPO:
-Marichich Speroni, Tobias Santiago
 Almeida Diaz, Marcelo Ariel
 Bertran Parodi, Joaquin
 Bejarano Pozzer, Valentina
+Marichich Speroni, Tobias Santiago
 Mecozzi, Bianca
 *COMISIÓN:
 K1.1
